@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ERTI — Gruzijas vieta, Tērbatas iela 66, Rīga</title>
+<meta name="description" content="Dizaina priekšlikums: ERTI – gruzīnu kafejnīca un veikals Tērbatas ielā 66, Rīgā.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..500&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@500&text=%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98%20%E1%83%A1%E1%83%98%E1%83%95%E1%83%A0%E1%83%AA%E1%83%94%20%E1%83%94%E1%83%A0%E1%83%97%E1%83%98&display=swap" rel="stylesheet">
+<style>
+/* ERTI, Tērbatas iela 66. The colours are the house's own: the orange façade, the mint wall inside,
+   the yellow vinyl on the window glass. The ERTI wordmark (fork E, knife I) and the round sign with
+   the man in the papakha are lifted straight off their window, not redrawn. */
+:root{
+  --orange:#dc5a2f; --orange-deep:#b3441d; --paper:#f7f2ea; --paper2:#efe7da; --mint:#dde8df; --mint2:#cbdccf;
+  --ink:#1f1916; --ink2:#4d433d; --mute:#7f746c; --line:rgba(31,25,22,.14); --yellow:#f5bd14; --open:#2f8a55;
+  --serif:"Literata",Georgia,serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --geo:"Noto Serif Georgian",serif;
+  --pad:20px; --max:1240px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.03rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+figure,blockquote{margin:0}
+button,input{font:inherit;color:inherit}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{font:600 .76rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--orange-deep);margin:0 0 14px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em;margin:0}
+h2{font-size:clamp(1.7rem,4.2vw,3rem);line-height:1.12;text-wrap:balance}
+h3{font-size:1.3rem;line-height:1.2}
+.lead{font-size:1.08rem;color:var(--ink2);margin:16px 0 0;max-width:40em}
+.nw{white-space:nowrap}
+cite{display:block;font:500 .86rem/1.4 var(--sans);font-style:normal;color:var(--mute);margin-top:12px}
+
+/* concept notice */
+.notice{background:var(--ink);color:#bfb3a8;font:400 .74rem/1.4 var(--sans);text-align:center;padding:7px 12px}
+.notice b{color:#fff;font-weight:600}
+
+/* buttons: square, like the window frames */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 22px;border-radius:2px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;font:600 1rem/1 var(--sans);text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn:hover{background:#000}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- hero: the orange wall ---------- */
+.hero{background:var(--orange);color:#fff}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr)}
+.hero-text{padding:10px var(--pad) 26px}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;font:500 .9rem/1 var(--sans);height:44px}
+.topline a{text-decoration:none}
+.lang{display:flex;gap:2px;margin-right:-10px}
+.lang button{appearance:none;background:none;border:0;min-height:44px;padding:8px 10px;cursor:pointer;font:600 .86rem/1 var(--sans);letter-spacing:.08em;color:rgba(255,255,255,.86)}
+.lang button span{display:inline-block;padding:6px 0}
+.lang button[aria-pressed=true]{color:#fff}
+.lang button[aria-pressed=true] span{box-shadow:inset 0 -2px 0 #fff}
+.wm{width:min(72%,310px);margin:16px 0 0 -4px}
+.sign{font:600 .72rem/1.65 var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:10px 0 0;color:rgba(255,255,255,.9)}
+.hero h1{font-size:clamp(1.8rem,8vw,3.4rem);line-height:1.08;margin:20px 0 0;max-width:15em;text-wrap:balance}
+.hero .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero .acts .btn{white-space:nowrap}
+.hero .btn{border-color:var(--ink)}
+.hero .btn.line{border-color:rgba(255,255,255,.8);color:#fff}
+.hero .btn.line:hover{background:#fff;color:var(--ink);border-color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:4px 18px;margin:18px 0 0;padding:0;list-style:none;font:500 .9rem/1.35 var(--sans);color:rgba(255,255,255,.92)}
+.facts .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#ffe3a3;margin-right:8px;vertical-align:1px}
+.facts .dot.on{background:#8ff0b0;box-shadow:0 0 0 3px rgba(143,240,176,.25)}
+.hero-photo{margin:0}
+.hero-photo img{width:100%;aspect-ratio:1170/1067;object-fit:cover}
+
+/* ---------- on the table ---------- */
+.sec{padding:76px 0 0}
+.dishes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 14px;margin-top:36px}
+.dish img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.dish.wide{grid-column:1/-1}
+.dish.wide img{aspect-ratio:1200/790}
+.dish h3{margin-top:14px}
+.dish p{margin:6px 0 0;color:var(--ink2);font-size:.95rem;line-height:1.5}
+.dish .by{display:block;margin-top:6px;font-size:.76rem;color:var(--mute)}
+.also{margin-top:40px;border-top:1px solid var(--line);padding-top:26px;display:grid;gap:18px}
+.also p{margin:0;font:500 1.28rem/1.4 var(--serif);letter-spacing:-.005em;text-wrap:balance}
+.also p span.k{display:block;font:600 .74rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.also .note{font:400 .95rem/1.5 var(--sans);color:var(--ink2)}
+.also .note a{font-weight:600;text-decoration-color:var(--orange);text-underline-offset:3px}
+
+/* ---------- guests ---------- */
+.guests .big{font:italic 400 clamp(1.6rem,4.4vw,2.7rem)/1.28 var(--serif);letter-spacing:-.01em;margin:0;max-width:24em}
+.guests .big cite{font-size:.9rem}
+.rating{display:flex;align-items:center;gap:14px;margin:0 0 26px}
+.rating b{font:600 2.9rem/1 var(--serif);letter-spacing:-.02em}
+.rating>span{color:var(--ink2);font-size:.95rem;line-height:1.4}
+.rating i{font-style:normal;color:var(--orange);letter-spacing:.08em}
+.small-q{display:grid;gap:26px;margin-top:40px}
+.small-q blockquote{font:italic 400 1.15rem/1.5 var(--serif);color:var(--ink)}
+
+/* ---------- wine & shop ---------- */
+.wine-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+.pics{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:12px;align-items:start;margin:0}
+.pics img{width:100%;object-fit:cover}
+.pics .a{aspect-ratio:4/5}
+.pics .b{aspect-ratio:4/7}
+.pics figcaption{grid-column:1/-1;font-size:.8rem;color:var(--mute);margin-top:-2px;line-height:1.4}
+.wine blockquote{font:italic 400 1.2rem/1.5 var(--serif);margin:26px 0 0}
+
+/* ---------- masterclass ---------- */
+.mc{background:var(--mint);margin-top:84px;padding:64px 0 68px}
+.mc-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+.form{background:#fff;padding:22px 18px 22px;border-radius:2px}
+.row{margin:0 0 20px}
+.row>.lab{display:block;font:600 .74rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;background:#fff;border:1.5px solid var(--line);border-radius:2px;padding:10px 14px;min-height:44px;cursor:pointer;font:500 .95rem/1.1 var(--sans);text-align:center}
+.chip small{display:block;font-size:.72rem;font-weight:400;color:var(--mute);margin-top:3px}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip[aria-pressed=true] small{color:rgba(255,255,255,.7)}
+#days,#times{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+#days .chip,#times .chip{padding:10px 4px;font-variant-numeric:tabular-nums}
+.chip:disabled{opacity:.38;cursor:default;border-style:dashed}
+.chip:disabled:hover{border-color:var(--line)}
+.pair{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:end}
+.step{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:2px;height:48px}
+.step button{appearance:none;background:none;border:0;width:44px;height:100%;cursor:pointer;font:500 1.3rem/1 var(--sans)}
+.step output{min-width:30px;text-align:center;font:600 1.05rem/1 var(--sans)}
+.field{display:block;width:100%;height:48px;border:1.5px solid var(--line);border-radius:2px;padding:0 12px;background:#fff;font:400 1rem/1 var(--sans)}
+.field:focus,.chip:focus-visible,.btn:focus-visible,.step button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.preview{margin:4px 0 16px;padding:14px 16px;background:var(--paper);font:400 .92rem/1.5 var(--sans);color:var(--ink2);border-radius:2px}
+.preview b{display:block;font:600 .7rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.send{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.send small{color:var(--mute);font-size:.88rem}
+.send small a{color:var(--ink);font-weight:600}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+.visit .addr{font:500 1.1rem/1.5 var(--sans);margin:14px 0 0;color:var(--ink2);max-width:34em}
+.visit .addr .ka{font:500 1.02rem/1.3 var(--geo);color:var(--orange-deep);white-space:nowrap}
+.fac img{width:100%;aspect-ratio:1100/1257;object-fit:cover}
+.fac figcaption{font-size:.8rem;color:var(--mute);margin-top:8px}
+.hours{border-top:1px solid var(--line);margin-top:6px}
+.open-now{display:flex;align-items:center;gap:10px;font:600 1.02rem/1.3 var(--sans);margin:22px 0 14px}
+.open-now i{width:10px;height:10px;border-radius:50%;background:var(--mute);flex:none}
+.open-now.on i{background:var(--open);box-shadow:0 0 0 4px rgba(47,138,85,.16)}
+.hrs{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0;margin:0;font-size:.98rem}
+.hrs dt,.hrs dd{margin:0;padding:7px 0}
+.hrs dd{text-align:right;font-variant-numeric:tabular-nums}
+.hrs .off{color:var(--mute)}
+.hrs .today{font-weight:700;color:var(--ink)}
+.hnote{font-size:.86rem;color:var(--mute);margin:12px 0 0;line-height:1.5}
+.contacts{margin-top:26px}
+.links{display:flex;flex-wrap:wrap;gap:6px 20px;margin:16px 0 0;font-weight:600}
+.links a{text-decoration-color:var(--orange);text-underline-offset:4px}
+.book{background:var(--paper2);padding:24px 18px;border-radius:2px}
+.book h3{font-size:1.55rem}
+.book>p{margin:8px 0 22px;color:var(--ink2);font-size:.97rem}
+.book .chip{background:transparent}
+.book .chip[aria-pressed=true]{background:var(--ink)}
+.book .field,.book .step{background:#fff}
+/* on a laptop an sms: link goes nowhere, so there the button copies the prepared text instead */
+.book .d{display:none}
+.book.desk .d{display:inline}
+.book.desk .t{display:none}
+.book.desk .send small{line-height:1.35}
+.book.desk .send small a{display:block;font:600 1.25rem/1.3 var(--sans);text-decoration:none;white-space:nowrap}
+
+/* ---------- footer: the window at night ---------- */
+.foot{background:var(--ink);color:#d9cfc5;margin-top:90px;padding:64px 0 40px}
+.foot-top{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;justify-items:start}
+.mask{display:block;background:var(--yellow);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center}
+.zime{width:150px;height:150px;-webkit-mask-image:url(img/zime.png);mask-image:url(img/zime.png)}
+.mark{width:170px;aspect-ratio:679/214;-webkit-mask-image:url(img/erti.png);mask-image:url(img/erti.png)}
+.geo{font:500 1.05rem/1.3 var(--geo);color:var(--yellow);margin:12px 0 0}
+.foot .cols{display:grid;gap:6px;font-size:.95rem}
+.foot .cols a{text-decoration:none;color:#fff}
+.foot .fine{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;line-height:1.6;color:#a39689}
+.foot .fine p{margin:0;max-width:70em}
+.foot .fine a{color:#d9cfc5}
+
+/* phone action bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(247,242,234,.96);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+.bar.on{transform:none}
+.bar .btn{min-height:46px;padding:0 12px;font-size:.95rem}
+
+@media (max-width:599px){
+  .hero .acts .btn{flex:1 1 150px;padding:0 14px}
+}
+@media (max-width:374px){
+  .hero .acts .btn{font-size:.95rem;padding:0 10px}
+}
+@media (min-width:600px){
+  :root{--pad:32px}
+  .dishes{gap:36px 22px}
+  .small-q{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px}
+  .form,.book{padding:30px 28px}
+}
+@media (min-width:900px){
+  :root{--pad:48px}
+  body{font-size:1.06rem}
+  .hero-grid{grid-template-columns:minmax(0,11fr) minmax(0,10fr);min-height:min(calc(100vh - 32px),860px)}
+  .hero-text{padding:22px var(--pad) 56px max(var(--pad),calc((100vw - var(--max))/2 + var(--pad)));display:flex;flex-direction:column}
+  .hero-text .body{margin:auto 0}
+  .wm{width:360px;margin-top:0}
+  .hero h1{font-size:clamp(2.4rem,3.6vw,3.4rem);max-width:13em}
+  .hero-photo{position:relative}
+  .hero-photo picture,.hero-photo img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-position:35% 30%}
+  .sec{padding-top:120px}
+  .food-head{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:56px;align-items:end}
+  .food-head .lead{margin:0 0 6px;font-size:1.2rem;line-height:1.45;color:var(--ink)}
+  .dishes{grid-template-columns:minmax(0,6fr) minmax(0,3fr) minmax(0,3fr);gap:28px;margin-top:52px}
+  .dish.wide{grid-column:auto}
+  .dish.wide img{aspect-ratio:8/5} /* 6fr at 8:5 is exactly as tall as 3fr at 4:5, so the three captions start on one line */
+  .also{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:40px;margin-top:56px}
+  .guests-grid{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:70px;align-items:end}
+  .small-q{grid-template-columns:minmax(0,1fr);margin-top:0}
+  .wine-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:70px;align-items:center}
+  .mc{margin-top:130px;padding:100px 0}
+  .mc-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px;align-items:start}
+  .visit-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);grid-template-areas:"head head" "fac fac" "hours book";gap:44px 80px;align-items:start}
+  .visit-head{grid-area:head}.fac{grid-area:fac}.hours-col{grid-area:hours}.book{grid-area:book}
+  .fac img{aspect-ratio:16/7;object-position:50% 58%}
+  .open-now{margin-top:0}
+  .foot{margin-top:130px;padding-top:80px}
+  .foot-top{grid-template-columns:auto auto minmax(0,1fr);gap:56px;align-items:center}
+  .foot .cols{justify-self:end;text-align:right}
+  .bar{display:none}
+}
+@media (min-width:900px) and (max-width:1100px){
+  .visit-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "fac" "hours" "book"}
+  .hours-col{max-width:520px}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav ERTI oficiālā lapa.</span><span data-lang="en" hidden>Design proposal — not ERTI's official website.</span></div>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="topline">
+        <a href="#kur">Tērbatas iela 66, Rīga</a>
+        <div class="lang" role="group" aria-label="Valoda / Language"><button type="button" data-set="lv" aria-pressed="true"><span>LV</span></button><button type="button" data-set="en" aria-pressed="false"><span>EN</span></button></div>
+      </div>
+      <div class="body">
+        <img class="wm" src="img/erti.png" width="679" height="214" alt="ERTI">
+        <p class="sign"><span data-lang="lv">Gruzijas vieta<br>Ēdieni, dzērieni, veikals</span><span data-lang="en" hidden>Georgian spot<br>Food, drinks, shop</span></p>
+        <h1><span data-lang="lv">Hinkaļi no plānākās mīklas un hačapuri ar pašu gatavotu sieru.</span><span data-lang="en" hidden>Khinkali from the thinnest dough, khachapuri with house-made cheese.</span></h1>
+        <div class="acts">
+          <a class="btn" href="#galds"><span data-lang="lv">Rezervēt galdiņu</span><span data-lang="en" hidden>Book a table</span></a>
+          <a class="btn line" href="tel:+37129255282"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>29 255 282</a>
+        </div>
+        <ul class="facts">
+          <li><span class="dot" id="heroDot"></span><span id="heroOpen"></span></li>
+          <li><span data-lang="lv">4,8 ★ Google, 212 atsauksmes</span><span data-lang="en" hidden>4.8 ★ on Google, 212 reviews</span></li>
+        </ul>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <picture>
+        <source media="(max-width:899px)" srcset="img/hinkali-m.jpg">
+        <img src="img/hinkali.jpg" width="1340" height="1640" alt="Hinkaļu locīšana ar rokām: uz galda gatavi hinkaļi, vienā rokā mīkla ar pildījumu" data-alt-en="Hands folding khinkali: finished khinkali on the table, dough with filling in one hand" fetchpriority="high">
+      </picture>
+    </figure>
+  </div>
+</header>
+
+<main>
+<section class="sec" id="edieni">
+  <div class="wrap">
+    <div class="food-head">
+      <div>
+        <p class="eyebrow"><span data-lang="lv">Uz galda</span><span data-lang="en" hidden>On the table</span></p>
+        <h2><span data-lang="lv">Atvērtā virtuve&nbsp;– var redzēt, kā top jūsu ēdiens.</span><span data-lang="en" hidden>An open kitchen&nbsp;— you can watch your food being made.</span></h2>
+      </div>
+      <p class="lead"><span data-lang="lv">Hačapuri sieru saimnieki gatavo paši&nbsp;– no zemnieku piena.</span><span data-lang="en" hidden>The owners make the cheese for the khachapuri themselves&nbsp;— from farm milk.</span></p>
+    </div>
+
+    <div class="dishes">
+      <article class="dish wide">
+        <figure><img src="img/hacapuri.jpg" width="1200" height="790" alt="Adžāru hačapuri ar olas dzeltenumu un sviestu uz sarkana šķīvja" data-alt-en="Adjarian khachapuri with an egg yolk and butter on a red plate" loading="lazy"></figure>
+        <h3><span data-lang="lv">Adžāru hačapuri</span><span data-lang="en" hidden>Adjarian khachapuri</span></h3>
+        <p><span data-lang="lv">Mīklas laiviņa ar sieru, olas dzeltenumu un sviestu.</span><span data-lang="en" hidden>A dough boat with cheese, an egg yolk and butter.</span><span class="by"><span data-lang="lv">Foto: Kate Kimove</span><span data-lang="en" hidden>Photo: Kate Kimove</span></span></p>
+      </article>
+      <article class="dish">
+        <figure><img src="img/rullisi.jpg" width="820" height="1025" alt="Baklažānu rullīši ar granātābola sēklām un zaļumiem, aiz tiem gruzīnu limonāde" data-alt-en="Aubergine rolls with pomegranate seeds and herbs, Georgian lemonade behind them" loading="lazy"></figure>
+        <h3><span data-lang="lv">Baklažānu rullīši</span><span data-lang="en" hidden>Aubergine rolls</span></h3>
+        <p><span data-lang="lv">Ar valriekstiem, granātābolu un zaļumiem.</span><span data-lang="en" hidden>With walnuts, pomegranate and herbs.</span></p>
+      </article>
+      <article class="dish">
+        <figure><img src="img/salati.jpg" width="820" height="1024" alt="Dārzeņu salāti zili baltā šķīvī" data-alt-en="Vegetable salad on a blue and white plate" loading="lazy"></figure>
+        <h3><span data-lang="lv">Dārzeņu salāti</span><span data-lang="en" hidden>Vegetable salad</span></h3>
+        <p><span data-lang="lv">Tomāti, gurķi, sarkanais sīpols, zaļumi.</span><span data-lang="en" hidden>Tomato, cucumber, red onion, herbs.</span></p>
+      </article>
+    </div>
+
+    <div class="also">
+      <p><span class="k"><span data-lang="lv">Vēl ēdienkartē</span><span data-lang="en" hidden>Also on the menu</span></span><span data-lang="lv">Hinkaļi, megrelu hačapuri, dolma, harčo</span><span data-lang="en" hidden>Khinkali, Megrelian khachapuri, dolma, kharcho</span></p>
+      <p><span class="k"><span data-lang="lv">Dzērieni</span><span data-lang="en" hidden>Drinks</span></span><span data-lang="lv">Gruzīnu vīni, limonādes, kompoti</span><span data-lang="en" hidden>Georgian wines, lemonades, compotes</span></p>
+      <p class="note"><span data-lang="lv">Par pilnu ēdienkarti un cenām jautājiet uz vietas vai pa tālruni <a href="tel:+37129255282">29&nbsp;255&nbsp;282</a>.</span><span data-lang="en" hidden>For the full menu and prices, ask in person or call <a href="tel:+37129255282">29&nbsp;255&nbsp;282</a>.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec guests">
+  <div class="wrap guests-grid">
+    <div>
+      <p class="eyebrow"><span data-lang="lv">Ko saka viesi</span><span data-lang="en" hidden>What guests say</span></p>
+      <div class="rating"><b><span data-lang="lv">4,8</span><span data-lang="en" hidden>4.8</span></b><span><i>★★★★★</i><br><span data-lang="lv">212 atsauksmes Google Maps</span><span data-lang="en" hidden>212 reviews on Google Maps</span></span></div>
+      <blockquote class="big"><span data-lang="lv">„Šis restorāns ir tuvākais, cik esmu bijusi Gruzijai bez būšanas Gruzijā.”</span><span data-lang="en" hidden>“This restaurant is the closest I have been to Georgia without being in Georgia.”</span><cite>— Aleksandra G., Google<span data-lang="en" hidden>, translated from Latvian</span></cite></blockquote>
+    </div>
+    <div class="small-q">
+      <blockquote><span data-lang="lv">„Amazing gruzīnu ēdiens un, es zinu ko runāju, pēc 12 + reizēm Gruzijā. Gaumardžos!!!!”</span><span data-lang="en" hidden>“Amazing Georgian food — and I know what I'm talking about, after 12+ times in Georgia. Gaumarjos!!!!”</span><cite>— Madara L., Google<span data-lang="en" hidden>, translated from Latvian</span></cite></blockquote>
+      <blockquote><span data-lang="lv">„Apkalpošanai dotu pat visas 10 zvaigznītes. Man viss ļoti patika, ēdiens garšīgs, ilgi nebija jāgaida. Atmosfēra ļoti silta.”</span><span data-lang="en" hidden>“I'd give the service all 10 stars. I liked everything, the food was tasty, I didn't have to wait long. The atmosphere is very warm.”</span><cite>— Evita V., Google<span data-lang="en" hidden>, translated from Latvian</span></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec wine" id="vins">
+  <div class="wrap wine-grid">
+    <figure class="pics">
+      <img class="a" src="img/ieksa.jpg" width="1100" height="1376" alt="ERTI iekšā: piparmētru zaļa siena, spilveni uz sola, vīna plaukts pie loga" data-alt-en="Inside ERTI: a mint-green wall, cushions on the bench, the wine shelf by the window" loading="lazy">
+      <img class="b" src="img/vins.jpg" width="760" height="1332" alt="Baltvīns tiek ieliets glāzē; uz galda rakstains celiņš un hačapuri" data-alt-en="White wine being poured into a glass; a patterned runner and khachapuri on the table" loading="lazy">
+      <figcaption><span data-lang="lv">Iekšā: piparmētru zaļā siena un vīna plaukts pie loga.</span><span data-lang="en" hidden>Inside: the mint-green wall and the wine shelf by the window.</span></figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow"><span data-lang="lv">Vīns un veikals</span><span data-lang="en" hidden>Wine and the shop</span></p>
+      <h2><span data-lang="lv">Gruzīnu vīns&nbsp;– glāzē pie galda vai pudelē līdzi.</span><span data-lang="en" hidden>Georgian wine&nbsp;— a glass at the table or a bottle to take home.</span></h2>
+      <p class="lead"><span data-lang="lv">ERTI ir arī veikals: gruzīnu vīni, limonādes un kompoti&nbsp;– uz vietas vai līdzņemšanai.</span><span data-lang="en" hidden>ERTI is a shop too: Georgian wines, lemonades and compotes&nbsp;— here or to take away.</span></p>
+      <blockquote><span data-lang="lv">„…ļoti patika, ka bija iespēja nogaršot vīnus, lai izdarītu izvēli.”</span><span data-lang="en" hidden>“…I really liked that I could taste the wines before choosing.”</span><cite>— Zane I., Google<span data-lang="en" hidden>, translated from Latvian</span></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="mc" id="meistarklase">
+  <div class="wrap mc-grid">
+    <div>
+      <p class="eyebrow"><span data-lang="lv">Meistarklase</span><span data-lang="en" hidden>Masterclass</span></p>
+      <h2><span data-lang="lv">Iemācieties locīt hinkaļus paši.</span><span data-lang="en" hidden>Learn to pleat khinkali yourself.</span></h2>
+      <p class="lead"><span data-lang="lv">ERTI rīko hinkaļu un hačapuri meistarklases. Pajautājiet tuvākos datumus un cenu&nbsp;– <span class="nw">e-pasta</span> vēstule uz erti.riga@gmail.com sagatavosies pati.</span><span data-lang="en" hidden>ERTI runs khinkali and khachapuri masterclasses. Ask for the next dates and the price&nbsp;— the e-mail to erti.riga@gmail.com writes itself.</span></p>
+    </div>
+    <form class="form" id="mcForm" onsubmit="return false">
+      <div class="row"><span class="lab"><span data-lang="lv">Ko mācīties</span><span data-lang="en" hidden>What to learn</span></span><div class="chips" id="what"></div></div>
+      <div class="row"><span class="lab"><span data-lang="lv">Cik jūs būsiet un jūsu vārds</span><span data-lang="en" hidden>How many of you, and your name</span></span>
+        <div class="pair"><div class="step"><button type="button" id="mcMinus" aria-label="−">−</button><output id="mcN">4</output><button type="button" id="mcPlus" aria-label="+">+</button></div><input class="field" id="mcName" type="text" autocomplete="name" placeholder="Vārds"></div>
+      </div>
+      <p class="preview" id="mcPrev"></p>
+      <div class="send"><a class="btn" id="mcSend" href="#"><span data-lang="lv">Rakstīt e-pastu</span><span data-lang="en" hidden>Write the e-mail</span></a><small><span data-lang="lv">vai zvaniet</span><span data-lang="en" hidden>or call</span> <a href="tel:+37129255282">29 255 282</a></small></div>
+    </form>
+  </div>
+</section>
+
+<section class="sec visit" id="kur">
+  <div class="wrap visit-grid">
+    <div class="visit-head">
+      <p class="eyebrow"><span data-lang="lv">Kur atrast ERTI</span><span data-lang="en" hidden>Where to find ERTI</span></p>
+      <h2>Tērbatas iela 66, Rīga</h2>
+      <p class="addr"><span data-lang="lv">Oranžā fasāde ar dzelteniem burtiem uz loga. Pie durvīm kāpnes ar laternām, virs durvīm gruzīnu burtiem:</span><span data-lang="en" hidden>The orange façade with yellow letters on the window. Lanterns on the steps and, above the door, in Georgian script:</span> <span class="ka" lang="ka">ქართული სივრცე ერთი</span></p>
+    </div>
+    <figure class="fac"><picture><source media="(max-width:899px)" srcset="img/fasade-m.jpg"><img src="img/fasade.jpg" width="1600" height="1066" alt="ERTI fasāde Tērbatas ielā 66: oranža siena, logs ar ERTI zīmi, durvis un kāpnes ar laternām" data-alt-en="The ERTI façade at Tērbatas iela 66: an orange wall, the window with the ERTI sign, the door and steps with lanterns" loading="lazy"></picture></figure>
+    <div class="hours-col">
+      <div class="open-now" id="openNow"><i></i><span id="openTxt"></span></div>
+      <dl class="hrs" id="hrs"></dl>
+      <p class="hnote"><span data-lang="lv">Darba laiks pēc Google Maps datiem. Uz durvīm rakstīts 12:00–22:00, tāpēc, ja braucat no tālienes, labāk piezvaniet.</span><span data-lang="en" hidden>Hours as listed on Google Maps. The door says 12:00–22:00, so if you're coming from afar, call first.</span></p>
+      <div class="contacts">
+        <a class="btn line" href="https://maps.google.com/?cid=3176286530800049920" target="_blank" rel="noopener"><span data-lang="lv">Maršruts Google Maps</span><span data-lang="en" hidden>Directions on Google Maps</span></a>
+        <p class="links"><a href="https://www.instagram.com/erti_riga/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61575785225937" target="_blank" rel="noopener">Facebook</a><a href="mailto:erti.riga@gmail.com">erti.riga@gmail.com</a></p>
+      </div>
+    </div>
+    <form class="book" id="galds" onsubmit="return false">
+      <h3><span data-lang="lv">Rezervēt galdiņu</span><span data-lang="en" hidden>Book a table</span></h3>
+      <p><span data-lang="lv">Izvēlieties dienu, laiku un cilvēku skaitu&nbsp;– <span class="t">tālrunis sagatavos īsziņu uz 29&nbsp;255&nbsp;282.</span><span class="d">īsziņas teksts numuram 29&nbsp;255&nbsp;282 sagatavosies pats.</span></span><span data-lang="en" hidden>Pick a day, a time and the number of people&nbsp;— <span class="t">your phone will prepare a text to 29&nbsp;255&nbsp;282.</span><span class="d">the text message for 29&nbsp;255&nbsp;282 writes itself.</span></span></p>
+      <div class="row"><span class="lab"><span data-lang="lv">Diena</span><span data-lang="en" hidden>Day</span></span><div class="chips" id="days"></div></div>
+      <div class="row"><span class="lab"><span data-lang="lv">Laiks</span><span data-lang="en" hidden>Time</span></span><div class="chips" id="times"></div></div>
+      <div class="row"><span class="lab"><span data-lang="lv">Cik jūs būsiet un jūsu vārds</span><span data-lang="en" hidden>How many of you, and your name</span></span>
+        <div class="pair"><div class="step"><button type="button" id="tMinus" aria-label="−">−</button><output id="tN">2</output><button type="button" id="tPlus" aria-label="+">+</button></div><input class="field" id="tName" type="text" autocomplete="name" placeholder="Vārds"></div>
+      </div>
+      <p class="preview" id="tPrev"></p>
+      <div class="send"><a class="btn" id="tSend" href="#galds"><span class="t"><span data-lang="lv">Sūtīt īsziņu</span><span data-lang="en" hidden>Send the text</span></span><span class="d" id="tCopy" aria-live="polite"></span></a><small><span class="t"><span data-lang="lv">vai zvaniet</span><span data-lang="en" hidden>or call</span></span><span class="d"><span data-lang="lv">nosūtiet īsziņā vai zvaniet</span><span data-lang="en" hidden>send it as a text, or call</span></span> <a href="tel:+37129255282">29&nbsp;255&nbsp;282</a></small></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <span class="mask zime" role="img" aria-label="ERTI zīme no loga" data-alt-en="The ERTI sign from the window"></span>
+      <div>
+        <span class="mask mark" role="img" aria-label="ERTI"></span>
+        <p class="geo" lang="ka">ქართული სივრცე ერთი</p>
+      </div>
+      <div class="cols">
+        <span>Tērbatas iela 66, Rīga, <span data-lang="lv">kopš 2025. gada aprīļa</span><span data-lang="en" hidden>since April 2025</span></span>
+        <a href="tel:+37129255282">29 255 282</a>
+        <a href="mailto:erti.riga@gmail.com">erti.riga@gmail.com</a>
+        <span><a href="https://www.instagram.com/erti_riga/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.facebook.com/profile.php?id=61575785225937" target="_blank" rel="noopener">Facebook</a></span>
+      </div>
+    </div>
+    <div class="fine"><p><span data-lang="lv">Šī lapa ir Nikitas dizaina priekšlikums, nevis ERTI oficiālā mājaslapa. Fotogrāfijas&nbsp;– ERTI pašu (Google Maps); hačapuri&nbsp;– Kate Kimove (Google Maps). ERTI logotips un zīme ņemti no ERTI loga (foto: Ola Stepancenko, Google Maps). Citāti&nbsp;– viesu atsauksmes Google, kā rakstītas. Nikita: <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span><span data-lang="en" hidden>This page is a design proposal by Nikita, not ERTI's official website. Photographs&nbsp;— ERTI's own (Google Maps); the khachapuri&nbsp;— Kate Kimove (Google Maps). The ERTI wordmark and sign are taken from ERTI's window (photo: Ola Stepancenko, Google Maps). Quotes&nbsp;— guests' Google reviews, translated in this version. Nikita: <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span></p></div>
+  </div>
+</footer>
+
+<div class="bar" id="bar" aria-hidden="true">
+  <a class="btn line" href="tel:+37129255282" tabindex="-1"><span data-lang="lv">Zvanīt</span><span data-lang="en" hidden>Call</span></a>
+  <a class="btn" href="#galds" tabindex="-1"><span data-lang="lv">Rezervēt galdiņu</span><span data-lang="en" hidden>Book a table</span></a>
+</div>
+
+<script>
+(function(){
+  var PHONE="+37129255282", MAIL="erti.riga@gmail.com", TZ="Europe/Riga";
+  // opening hours as listed on Google Maps, minutes after midnight; 0 = Sunday
+  var HRS={0:[810,1260],1:null,2:[1080,1320],3:null,4:null,5:[840,1320],6:[840,1230]};
+  var ORDER=[1,2,3,4,5,6,0];
+  var T={
+    lv:{days:["Svētdiena","Pirmdiena","Otrdiena","Trešdiena","Ceturtdiena","Piektdiena","Sestdiena"],
+        loc:["svētdien","pirmdien","otrdien","trešdien","ceturtdien","piektdien","sestdien"],
+        short:["Svētd.","Pirmd.","Otrd.","Trešd.","Ceturtd.","Piektd.","Sestd."],closed:"slēgts",today:"Šodien",tomorrow:"Rīt",
+        openUntil:function(c){return "Šobrīd atvērts, līdz "+c},
+        opensAt:function(o){return "Šodien atvērts no "+o},
+        closedTil:function(d,o){return "Šobrīd slēgts, atvērts "+d+" no "+o},
+        heroOpen:function(c){return "Atvērts līdz "+c},
+        heroToday:function(o,c){return "Šodien "+o+"–"+c},
+        heroClosed:function(d,o){return "Šodien slēgts, atvērts "+d+" no "+o},
+        tmrw:"rīt",
+        what:["Hinkaļi","Hačapuri","Abi"],whatMsg:["hinkaļi","hačapuri","hinkaļi un hačapuri"],whatGen:["hinkaļu","hačapuri","hinkaļu un hačapuri"],
+        name:"Vārds",title:"ERTI — Gruzijas vieta, Tērbatas iela 66, Rīga",
+        mcSubj:function(o){return "Meistarklase: "+this.whatMsg[o.i]+", "+o.n+" "+pl(o.n)},
+        mcMsg:function(o){return "Labdien! "+(o.n==1?"Vēlos":"Vēlamies")+" pieteikties uz "+this.whatGen[o.i]+" meistarklasi ERTI"+(o.n==1?"":", būsim "+o.n+" "+pl(o.n))+". Lūdzu, uzrakstiet tuvākos datumus un cenu."+(o.name?" "+o.name:"")},
+        tMsg:function(o){return "Labdien! Vēlos rezervēt galdiņu ERTI: "+o.day+", plkst. "+o.time+", "+o.n+" "+(o.n%10==1&&o.n%100!=11?"personai":"personām")+"."+(o.name?" Vārds: "+o.name+".":"")+" Paldies!"},
+        prevMail:"E-pasts uz erti.riga@gmail.com",prevSms:"Īsziņa uz 29 255 282",copy:"Kopēt tekstu",copied:"Nokopēts"},
+    en:{days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        loc:["on Sunday","on Monday","on Tuesday","on Wednesday","on Thursday","on Friday","on Saturday"],
+        short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],closed:"closed",today:"Today",tomorrow:null, // "Tomorrow" is too wide for a quarter-width chip: the weekday is shown instead
+        openUntil:function(c){return "Open now, until "+c},
+        opensAt:function(o){return "Open today from "+o},
+        closedTil:function(d,o){return "Closed now, opens "+d+" at "+o},
+        heroOpen:function(c){return "Open until "+c},
+        heroToday:function(o,c){return "Today "+o+"–"+c},
+        heroClosed:function(d,o){return "Closed today, opens "+d+" at "+o},
+        tmrw:"tomorrow",
+        what:["Khinkali","Khachapuri","Both"],whatMsg:["khinkali","khachapuri","khinkali and khachapuri"],
+        name:"Name",title:"ERTI — Georgian spot, Tērbatas iela 66, Riga",
+        mcSubj:function(o){return "Masterclass: "+this.whatMsg[o.i]+", "+o.n+" "+(o.n==1?"person":"people")},
+        mcMsg:function(o){return "Hello! "+(o.n==1?"I'd":"We'd")+" like to sign up for a masterclass at ERTI: "+this.whatMsg[o.i]+", "+o.n+" "+(o.n==1?"person":"people")+". Could you let "+(o.n==1?"me":"us")+" know the next dates and the price?"+(o.name?" "+o.name:"")},
+        tMsg:function(o){return "Hello! I'd like to book a table at ERTI: "+o.day+" at "+o.time+", for "+o.n+" "+(o.n==1?"person":"people")+"."+(o.name?" Name: "+o.name+".":"")+" Thank you!"},
+        prevMail:"E-mail to erti.riga@gmail.com",prevSms:"Text to 29 255 282",copy:"Copy the text",copied:"Copied"}
+  };
+  function pl(n){return n%10==1&&n%100!=11?"cilvēks":"cilvēki"}
+  function $(s){return document.querySelector(s)}
+  function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s))}
+  function pad(n){return (n<10?"0":"")+n}
+  function hm(m){return pad(Math.floor(m/60))+":"+pad(m%60)}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  function rigaNow(){
+    var o={};
+    try{new Intl.DateTimeFormat("en-GB",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false,weekday:"short"}).formatToParts(new Date()).forEach(function(p){o[p.type]=p.value});}
+    catch(e){var d=new Date();return {y:d.getFullYear(),m:d.getMonth()+1,d:d.getDate(),h:d.getHours(),mi:d.getMinutes(),wd:d.getDay()}}
+    return {y:+o.year,m:+o.month,d:+o.day,h:+o.hour%24,mi:+o.minute,wd:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday]};
+  }
+  function dayAdd(p,k){var dt=new Date(Date.UTC(p.y,p.m-1,p.d+k,12));return {y:dt.getUTCFullYear(),m:dt.getUTCMonth()+1,d:dt.getUTCDate(),wd:dt.getUTCDay()}}
+  var now=rigaNow(), nowMin=now.h*60+now.mi, lang="lv";
+  var st={what:0,mcN:4,day:null,time:null,tN:2,copied:false};
+
+  function nextOpen(){ // first opening after now: [dayOffset, weekday]
+    for(var k=1;k<8;k++){var q=dayAdd(now,k);if(HRS[q.wd])return [k,q.wd]}
+  }
+  function renderHours(){
+    var L=T[lang],h=HRS[now.wd],s,on=false,hero;
+    var nx=nextOpen(), nxDay=nx?(nx[0]==1?L.tmrw:L.loc[nx[1]]):"", nxAt=nx?hm(HRS[nx[1]][0]):"";
+    if(h&&nowMin>=h[0]&&nowMin<h[1]){s=L.openUntil(hm(h[1]));hero=L.heroOpen(hm(h[1]));on=true}
+    else if(h&&nowMin<h[0]){s=L.opensAt(hm(h[0]));hero=L.heroToday(hm(h[0]),hm(h[1]))}
+    else {s=L.closedTil(nxDay,nxAt);hero=h?s:L.heroClosed(nxDay,nxAt)}
+    $("#openTxt").textContent=s; $("#openNow").classList.toggle("on",on);
+    $("#heroOpen").textContent=hero; $("#heroDot").classList.toggle("on",on);
+    $("#hrs").innerHTML=ORDER.map(function(d){var x=HRS[d],c=(d===now.wd?"today ":"")+(x?"":"off");
+      return '<dt class="'+c+'">'+L.days[d]+'</dt><dd class="'+c+'">'+(x?hm(x[0])+"–"+hm(x[1]):L.closed)+'</dd>'}).join("");
+  }
+  function chip(html,pressed){var b=document.createElement("button");b.type="button";b.className="chip";b.innerHTML=html;b.setAttribute("aria-pressed",pressed?"true":"false");return b}
+
+  // masterclass
+  function renderMc(){
+    var L=T[lang],box=$("#what");box.innerHTML="";
+    L.what.forEach(function(t,i){var b=chip(t,st.what===i);b.onclick=function(){st.what=i;renderMc()};box.appendChild(b)});
+    $("#mcN").textContent=st.mcN;
+    var o={i:st.what,what:L.what[st.what],n:st.mcN,name:$("#mcName").value.trim()};
+    var msg=L.mcMsg(o);
+    $("#mcPrev").innerHTML="<b>"+L.prevMail+"</b>"+esc(msg);
+    $("#mcSend").href="mailto:"+MAIL+"?subject="+encodeURIComponent(L.mcSubj(o))+"&body="+encodeURIComponent(msg);
+  }
+  // table: whole-hour slots from opening until an hour before closing; today only those at least 45 min ahead.
+  // A day is offered only while it still has a slot, so the message can never go out without a time.
+  function slots(k){var q=dayAdd(now,k),h=HRS[q.wd],l=[];if(!h)return l;
+    for(var m=Math.ceil(h[0]/60)*60;m<=h[1]-60;m+=60)if(k!==0||m>=nowMin+45)l.push(m);return l}
+  function isDesk(){return innerWidth>=900&&!!window.matchMedia&&matchMedia("(hover:hover) and (pointer:fine)").matches}
+  var tMsgNow="";
+  function renderTable(){
+    var L=T[lang],box=$("#days");box.innerHTML="";
+    if(st.day==null||!slots(st.day).length){st.day=null;for(var i=0;i<14;i++)if(slots(i).length){st.day=i;break}}
+    for(var k=0,shown=0;k<14&&shown<4;k++){
+      if(!slots(k).length)continue; shown++;
+      var q=dayAdd(now,k),lab=k==0?L.today:(k==1&&L.tomorrow)||L.short[q.wd];
+      var b=chip(lab+"<small>"+pad(q.d)+"."+pad(q.m)+".</small>",k===st.day);
+      b.setAttribute("data-k",k);
+      b.onclick=function(){st.day=+this.getAttribute("data-k");st.time=null;st.copied=false;renderTable()};
+      box.appendChild(b);
+    }
+    var tb=$("#times");tb.innerHTML="";
+    var list=st.day!=null?slots(st.day):[];
+    if(list.indexOf(st.time)<0){var pref=list.filter(function(m){return m>=18*60})[0];st.time=pref!=null?pref:(list[0]!=null?list[0]:null)}
+    list.forEach(function(m){var b=chip(hm(m),m===st.time);b.onclick=function(){st.time=m;st.copied=false;renderTable()};tb.appendChild(b)});
+    $("#tN").textContent=st.tN;
+    var ready=st.day!=null&&st.time!=null,dayTxt="…";
+    if(st.day!=null){var q2=dayAdd(now,st.day),dt=pad(q2.d)+"."+pad(q2.m)+".";
+      dayTxt=st.day===0?(lang=="lv"?"šodien, ":"today, ")+dt:st.day===1?(lang=="lv"?"rīt, ":"tomorrow, ")+dt:(lang=="lv"?L.loc[q2.wd]+", ":L.days[q2.wd]+" ")+dt}
+    var msg=L.tMsg({day:dayTxt,time:st.time!=null?hm(st.time):"…",n:st.tN,name:$("#tName").value.trim()});
+    tMsgNow=ready?msg:"";
+    $("#tPrev").innerHTML="<b>"+L.prevSms+"</b>"+esc(msg);
+    $("#galds").classList.toggle("desk",isDesk());
+    $("#tCopy").textContent=st.copied?L.copied:L.copy;
+    $("#tSend").href=ready?"sms:"+PHONE+"?&body="+encodeURIComponent(msg):"#galds";
+  }
+  function copyText(t,done,fail){
+    function old(){var ta=document.createElement("textarea"),ok=false;ta.value=t;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);ta.select();try{ok=document.execCommand("copy")}catch(e){}document.body.removeChild(ta);if(ok)done();else fail()}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(done,old);else old();
+  }
+  function selectPrev(){ // copying was refused: leave the prepared text selected so it can be copied by hand
+    try{var r=document.createRange();r.selectNodeContents($("#tPrev").lastChild);var g=getSelection();g.removeAllRanges();g.addRange(r)}catch(e){}
+  }
+  var copyTimer;
+  $("#tSend").addEventListener("click",function(e){
+    if(!tMsgNow){e.preventDefault();return}
+    if(!isDesk())return; // phones follow the sms: link
+    e.preventDefault();
+    copyText(tMsgNow,function(){st.copied=true;renderTable();clearTimeout(copyTimer);copyTimer=setTimeout(function(){st.copied=false;renderTable()},2400)},selectPrev);
+  });
+  function step(id,key,d,min,max,fn){$(id).onclick=function(){st[key]=Math.max(min,Math.min(max,st[key]+d));fn()}}
+  step("#mcMinus","mcN",-1,1,20,renderMc); step("#mcPlus","mcN",1,1,20,renderMc);
+  function tChange(){st.copied=false;renderTable()}
+  step("#tMinus","tN",-1,1,12,tChange); step("#tPlus","tN",1,1,12,tChange);
+  $("#mcName").addEventListener("input",renderMc); $("#tName").addEventListener("input",tChange);
+
+  function setLang(l){
+    if(!T[l])l="lv"; lang=l; document.documentElement.lang=l;
+    $$("[data-lang]").forEach(function(e){e.hidden=e.getAttribute("data-lang")!==l});
+    $$(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-set")===l?"true":"false")});
+    $$("#mcName,#tName").forEach(function(i){i.placeholder=T[l].name});
+    document.title=T[l].title;
+    $$("[data-alt-en]").forEach(function(e){var a=e.hasAttribute("alt")?"alt":"aria-label";
+      if(!e.hasAttribute("data-alt-lv"))e.setAttribute("data-alt-lv",e.getAttribute(a));
+      e.setAttribute(a,e.getAttribute("data-alt-"+l))});
+    try{localStorage.setItem("erti-lang",l)}catch(e){}
+    renderHours(); renderMc(); renderTable();
+  }
+  $$(".lang button").forEach(function(b){b.onclick=function(){setLang(b.getAttribute("data-set"))}});
+  var start="lv";
+  try{var saved=localStorage.getItem("erti-lang");if(saved)start=saved}catch(e){}
+  var qm=location.search.match(/[?&]lang=(lv|en)\b/); if(qm)start=qm[1];
+  setLang(start);
+
+  // phone bar: after the hero, hidden while the booking form or footer is on screen
+  var bar=$("#bar"),hero=$(".hero"),book=$("#galds"),foot=$(".foot");
+  function vis(el){var r=el.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}
+  function onScroll(){
+    if(innerWidth>=900){bar.classList.remove("on");return}
+    var show=hero.getBoundingClientRect().bottom<0&&!vis(book)&&!vis(foot);
+    bar.classList.toggle("on",show); bar.setAttribute("aria-hidden",show?"false":"true");
+    $$("#bar a").forEach(function(a){a.tabIndex=show?0:-1});
+  }
+  addEventListener("scroll",onScroll,{passive:true}); var wasDesk=isDesk();
+  addEventListener("resize",function(){onScroll();if(isDesk()!==wasDesk){wasDesk=!wasDesk;renderTable()}}); onScroll();
+})();
+</script>
+</body>
+</html>
